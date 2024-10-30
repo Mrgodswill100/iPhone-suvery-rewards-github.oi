@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iPhone Giveaway</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            color: #333;
+        }
+        form {
+            background: #fff;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        input, textarea {
+            width: 100%;
+            margin: 10px 0;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        button {
+            background: #28a745;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: #218838;
+        }
+    </style>
+</head>
+<body>
+    <h1>Win a Free iPhone!</h1>
+    <p>Participate in our survey for a chance to win a brand new iPhone!</p>
+
+    <form id="survey-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="feedback">Your Feedback:</label>
+        <textarea id="feedback" rows="4" required></textarea>
+
+        <button type="submit">Submit & Enter Giveaway</button>
+    </form>
+
+    <h2>How to Enter:</h2>
+    <p>1. Complete the survey above.</p>
+    <p>2. Share this page with your friends!</p>
+    <p>3. Stay tuned for the winner announcement!</p>
+
+    <script>
+        document.getElementById('survey-form').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevent form submission
+            
+            // Simulate entry
+            alert('Thank you for your participation! You have entered the giveaway.');
+            // Here you can implement further logic to handle data (like sending it to a server)
+        });
+    </script>
+</body>
+</html>
